@@ -5,7 +5,7 @@ Package to explore recursive function theory
 Part of the "Boring Math" PyPI **bm** namespace for mathematical hobby
 projects.
 
-* [Ackermann's Function](#ackermann)
+* [Ackermann's Function](#ackermann-function)
 * [Fibonacci Sequences](#fibonacci-sequences)
 
 * **Repositories**
@@ -16,7 +16,7 @@ projects.
 
 ## Library Modules
 
-### Ackermann's Function
+### Ackermann Function
 
 * Function **ackermann_list**(m: int, n: int) -> int
   * an example of a total computable function that is not primitive recursive
