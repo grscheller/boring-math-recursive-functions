@@ -18,6 +18,9 @@ projects.
 * **Detailed documentation**
   * [Detailed API documentation][3] on *GH-Pages*
 
+This project is part of the
+[Boring Math][4] **bm.** namespace project.
+
 ### Recursive functions
 
 #### Ackermann's Function
@@ -58,7 +61,7 @@ project.scripts section of pyproject.toml.
 Ackermann, a student of Hilbert, discovered early examples of totally
 computable functions that are not primitively recursive.
 
-A [fairly standard][4] definition of the Ackermann function is
+A [fairly standard][5] definition of the Ackermann function is
 recursively defined for `m,n >= 0` by
 
 ```
@@ -78,5 +81,6 @@ recursively defined for `m,n >= 0` by
 [1]: https://pypi.org/project/bm.recursive-functions/
 [2]: https://github.com/grscheller/bm-recursive-functions/
 [3]: https://grscheller.github.io/boring-math-docs/recursive-functions/
-[4]: https://mathworld.wolfram.com/AckermannFunction.html
+[4]: https://github.com/grscheller/boring-math-docs
+[5]: https://mathworld.wolfram.com/AckermannFunction.html
 
