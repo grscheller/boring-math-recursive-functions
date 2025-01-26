@@ -9,9 +9,6 @@ implement recursive functions in Python.
 * CLI applications
   * [Ackermann CGI programs](#ackermann-cgi-scripts)
 
-Part of the "Boring Math" PyPI **bm** namespace for mathematical hobby
-projects.
-
 * **Repositories**
   * [bm.recursive-functions][1] project on *PyPI*
   * [Source code][2] on *GitHub*
