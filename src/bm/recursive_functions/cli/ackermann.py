@@ -28,10 +28,12 @@ recursive function.
 * program **ackermann** uses a Python List to implement recursion
 
 """
+
 from __future__ import annotations
 
 import sys
 from bm.recursive_functions.examples import ackermann_list
+
 
 def ackermann_cli() -> None:
     """
@@ -49,15 +51,14 @@ def ackermann_cli() -> None:
             m = int(args[0])
             n = int(args[1])
             if m < 0 or n < 0:
-                print("Error: Negative integer argument given" , file=sys.stderr)
+                print('Error: Negative integer argument given', file=sys.stderr)
                 sys.exit(1)
         except ValueError:
-            print("Error: Non-integer argument given", file=sys.stderr)
+            print('Error: Non-integer argument given', file=sys.stderr)
             sys.exit(1)
     else:
-        print("Error: ackermann.py takes 2 arguments", file=sys.stderr)
+        print('Error: ackermann.py takes 2 arguments', file=sys.stderr)
         sys.exit(1)
 
     # Compute and display value
     print(ackermann_list(m, n))
-

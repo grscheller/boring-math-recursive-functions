@@ -56,13 +56,15 @@ sequence.
 ---
 
 """
+
 from __future__ import annotations
 
 from collections.abc import Iterator
 
-__all__ = [ 'ackermann_list', 'fibonacci_generator', 'rev_fibonacci_generator' ]
+__all__ = ['ackermann_list', 'fibonacci_generator', 'rev_fibonacci_generator']
 
-def ackermann_list(m: int, n:int) -> int:
+
+def ackermann_list(m: int, n: int) -> int:
     """Ackermann's Function.
 
     * evaluate Ackermann's function simulating recursion with a list
@@ -85,10 +87,11 @@ def ackermann_list(m: int, n:int) -> int:
         else:
             acker[-2] = mm - 1
             acker[-1] = mm
-            acker.append(nn-1)
+            acker.append(nn - 1)
     return acker[0]
 
-def fibonacci_generator(fib0: int=0, fib1: int=1) -> Iterator[int]:
+
+def fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
     """Fibonacci iterator.
 
     Generate a Fibonacci sequence instead of recursively evaluating it.
@@ -100,9 +103,10 @@ def fibonacci_generator(fib0: int=0, fib1: int=1) -> Iterator[int]:
     """
     while True:
         yield fib0
-        fib0, fib1 = fib1, fib0+fib1
+        fib0, fib1 = fib1, fib0 + fib1
 
-def rev_fibonacci_generator(fib0: int=0, fib1: int=1) -> Iterator[int]:
+
+def rev_fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
     """Reverse Fibonacci iterator.
 
     Generate a reverse Fibonacci sequence instead of recursively evaluating it.
@@ -113,6 +117,5 @@ def rev_fibonacci_generator(fib0: int=0, fib1: int=1) -> Iterator[int]:
 
     """
     while True:
-        fib0, fib1 = fib1, fib0-fib1
+        fib0, fib1 = fib1, fib0 - fib1
         yield fib0
-
