@@ -27,7 +27,7 @@ keywords = [
 ]
 
 [project.optional-dependencies]
-tests = ["pytest >=8.3.2"]
+tests = ["pytest >=8.3.5"]
 
 [project.scripts]
 ackermann = "bm.recursive_functions.cli.ackermann:ackermann_cli"
