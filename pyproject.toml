@@ -4,9 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "bm.recursive-functions"
-authors = [
-    { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
-]
+authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.12"
@@ -17,13 +15,15 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.13",
-    "Typing :: Typed"
+    "Typing :: Typed",
 ]
 dependencies = []
 dynamic = ["version", "description"]
 keywords = [
-    "recursive", "recursive functions", 
-    "ackermann", "fibonacci"
+    "recursive",
+    "recursive functions",
+    "ackermann",
+    "fibonacci",
 ]
 
 [project.optional-dependencies]
@@ -38,7 +38,10 @@ Changelog = "https://github.com/grscheller/bm-recursive-functions/blob/main/CHAN
 Documentation = "https://grscheller.github.io/boring-math-docs/recursive-functions"
 
 [tool.flit.sdist]
-exclude = ["dist", ".gitignore", ".mypy_cache"]
+exclude = ["dist", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
+
+[tool.pytest.ini_options]
+consider_namespace_packages = true
 
 [tool.pylsp-mypy]
 enabled = true
@@ -54,19 +57,15 @@ warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-consider_namespace_packages = true
-
 [tool.ruff]
 target-version = "py313"
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
 
-[tool.ruff.format]
-quote-style = "single"
-
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
 
+[tool.ruff.format]
+quote-style = "single"
+docstring-code-line-length = 72
