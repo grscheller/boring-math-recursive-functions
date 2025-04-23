@@ -21,8 +21,8 @@ section in the project's pyproject.toml file.
 
 #### Example applications
 
-* Ackermann program: ackermann
-  * source code: bm.recursive_functions.cli.ackermann
-    * uses a Python list to implement recursion
+- Ackermann program: ackermann
+  - source code: bm.recursive_functions.cli.ackermann
+    - uses a Python list to implement recursion
 
 """

@@ -19,25 +19,25 @@ Package to explore efficient ways to implement recursive functions.
 
 #### Examples of recursive functions
 
-* module: bm.recursive_functions.examples
-  * Ackermann's function
-    * with list
-      * function: bm.recursive_functions.examples.ackermann_list
-  * Fibonacci sequences
-    * with generators
-      * function: bm.recursive_functions.examples.fibonacci_generator
-      * function: bm.recursive_functions.examples.rev_fibonacci_generator
+- module: bm.recursive_functions.examples
+  - Ackermann's function
+    - with list
+      - function: bm.recursive_functions.examples.ackermann_list
+  - Fibonacci sequences
+    - with generators
+      - function: bm.recursive_functions.examples.fibonacci_generator
+      - function: bm.recursive_functions.examples.rev_fibonacci_generator
 
 #### CLI program entry points using the above example functions
 
-* package: bm.recursive_functions.cli
-  * module: bm.recursive_functions.cli.ackermann
+- package: bm.recursive_functions.cli
+  - module: bm.recursive_functions.cli.ackermann
 
 ---
 
 """
 
-__version__ = '0.5.0.1'
+__version__ = '0.5.1'
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2016-2025 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
