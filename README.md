@@ -74,7 +74,7 @@ computable functions that are not primitively recursive.
 A [fairly standard][5] definition of the Ackermann function is
 recursively defined for `m,n >= 0` by
 
-```math
+```
     ackermann(0,n) = n+1
     ackermann(m,0) = ackermann(m-1,1)
     ackermann(m,n) = ackermann(m-1, ackermann(m, n-1))
