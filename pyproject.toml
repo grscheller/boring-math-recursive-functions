@@ -35,6 +35,7 @@ tests = [
 ackermann = "bm.recursive_functions.cli.ackermann:ackermann_cli"
 
 [project.urls]
+Homepage = "https://github.com/grscheller/bm-docs"
 Source = "https://github.com/grscheller/bm-recursive-functions"
 Changelog = "https://github.com/grscheller/bm-recursive-functions/blob/main/CHANGELOG.md"
 Documentation = "https://grscheller.github.io/boring-math-docs/recursive-functions"
