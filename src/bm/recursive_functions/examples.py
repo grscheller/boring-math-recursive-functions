@@ -13,17 +13,13 @@
 # limitations under the License.
 
 """
-### Examples of recursive functions.
+Examples of recursive functions
+===============================
 
 Examples implementations for various recursive functions.
 
-* [Ackermann's Function](#ackermann-function)
-  * function: ackermann_list(m, n)
-* [Fibonacci Sequence](#fibonacci-sequences)
-  * function: fibonacci_generator(fib0, fib1)
-  * function: rev_fibonacci_generator(fib1, fib0)
-
-#### Ackermann function
+Ackermann function
+------------------
 
 Ackermann's function is an example of a function that is computable
 but not primitively recursive. It quickly becomes computationally
@@ -31,13 +27,12 @@ intractable for relatively small values of m.
 
 Ackermann function is defined recursively by
 
-* ackermann(0,n)=n+1                                 for n >= 0
-* ackermann(m,0)=ackermann(m-1,1)                    for m >= 0
-* ackermann(m,n)=ackermann(m-1, ackermann(m,n-1))    for m,n > 0
+- ``ackermann(0,n)=n+1                               for n >= 0``
+- ``ackermann(m,0)=ackermann(m-1,1)                  for m >= 0``
+- ``ackermann(m,n)=ackermann(m-1, ackermann(m,n-1))  for m,n > 0``
 
----
-
-#### Fibonacci sequences
+Fibonacci sequences
+-------------------
 
 The Fibonacci sequence is usually taught in grade school as the
 first recursive function that is not either an arithmetic or geometric
@@ -45,15 +40,13 @@ sequence.
 
     The Fibonacci sequence is traditionally defined as
 
-    * f₁ = 1
-    * f₂ = 1
-    * fₙ₊₂ = fₙ₊₁ + fₙ
+    - ``f₁ = 1``
+    - ``f₂ = 1``
+    - ``fₙ₊₂ = fₙ₊₁ + fₙ``
 
     Actually, a Fibonacci extends can extend in both directions.
 
-    * ..., 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 6, 13, ...
-
----
+    - ..., 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 6, 13, ...
 
 """
 
@@ -67,12 +60,12 @@ __all__ = ['ackermann_list', 'fibonacci_generator', 'rev_fibonacci_generator']
 def ackermann_list(m: int, n: int) -> int:
     """Ackermann's Function.
 
-    * evaluate Ackermann's function simulating recursion with a list
+    Evaluate Ackermann's function simulating recursion with a list.
 
-    This implementation models the recursion with a Python list instead of the
-    Python function call stack. It then evaluates the innermost ackermann
-    function first. To naively use the Python call stack would result in this
-    function not being stack safe.
+    .. note::
+        This implementation models the recursion with a Python list instead of Python's
+        "call stack". It then evaluates the innermost ackermann function first. To
+        naively use call stack recursion would result in the loss of stack safety.
 
     """
     acker = [m, n]
@@ -96,9 +89,9 @@ def fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
 
     Generate a Fibonacci sequence instead of recursively evaluating it.
 
-    * returns an iterator to a Fibonacci sequence
-      * beginning fib0, fib1, fib0+fib1, ...
-      * default yields 0, 1, 1. 2, 3, 5, 8, 13, ...
+    - returns an iterator to a Fibonacci sequence
+      - beginning fib0, fib1, fib0+fib1, ...
+      - default yields 0, 1, 1. 2, 3, 5, 8, 13, ...
 
     """
     while True:
@@ -111,9 +104,9 @@ def rev_fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
 
     Generate a reverse Fibonacci sequence instead of recursively evaluating it.
 
-    * Returns iterator iterating over the Fibonacci sequence in reverse order
-      * beginning fib1, fib0, fib1-fib0, ...
-      * default yields 1, -1, 2, -3, 5, -8, 13, ...
+    - Returns iterator iterating over the Fibonacci sequence in reverse order
+      - beginning fib1, fib0, fib1-fib0, ...
+      - default yields 1, -1, 2, -3, 5, -8, 13, ...
 
     """
     while True:

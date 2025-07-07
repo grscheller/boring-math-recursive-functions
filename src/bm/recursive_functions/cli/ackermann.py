@@ -15,17 +15,17 @@
 """
 ### Programs to evaluate Ackermann's function
 
-The version of the Ackermann's function being used is defined recursively by
+.. note::
+    The version of the Ackermann's function being used is defined recursively by
 
-```
-   ackermann(0,n) = n+1                                 for n >= 0
-   ackermann(m,0) = ackermann(m-1,1)                    for m >= 0
-   ackermann(m,n) = ackermann(m-1, ackermann(m, n-1))   for m,n > 0
-```
-Ackermann's function is an example of a computable but not primitively
-recursive function.
+       ackermann(0,n) = n+1                                 for n >= 0
+       ackermann(m,0) = ackermann(m-1,1)                    for m >= 0
+       ackermann(m,n) = ackermann(m-1, ackermann(m, n-1))   for m,n > 0
 
-* program **ackermann** uses a Python List to implement recursion
+    Ackermann's function is an example of a computable but not primitively
+    recursive function.
+
+- program **ackermann** uses a Python List to implement recursion
 
 """
 
@@ -36,13 +36,12 @@ from bm.recursive_functions.examples import ackermann_list
 
 
 def ackermann_cli() -> None:
-    """
-    Evaluate Ackermann's function simulating recursion with a Python list.
+    """Evaluate Ackermann's function simulating recursion with a Python list.
 
-    Usage: ackermann m n
+    Usage: ``ackermann m n``
 
-    * gets installed into the virtual environment
-    * becomes numerically intractable after m=4 n=1
+    - gets installed into the virtual environment
+    - becomes numerically intractable after m=4 n=1
 
     """
     args = sys.argv[1:]
@@ -60,5 +59,4 @@ def ackermann_cli() -> None:
         print('Error: ackermann.py takes 2 arguments', file=sys.stderr)
         sys.exit(1)
 
-    # Compute and display value
     print(ackermann_list(m, n))

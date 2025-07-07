@@ -13,16 +13,20 @@
 # limitations under the License.
 
 """
-### Entry points for automatically generated CLI scripts
+Entry points for automatically generated CLI scripts
+----------------------------------------------------
 
 The CGI package automatically generates Python scripts in an OS independent way
 using the packaging build backend. This is configured by the `[project.scripts]`
 section in the project's pyproject.toml file.
 
-#### Example applications
+Example applications
+--------------------
 
 - Ackermann program: ackermann
-  - source code: bm.recursive_functions.cli.ackermann
+
+  - bm.recursive_functions.cli.ackermann
+
     - uses a Python list to implement recursion
 
 """
