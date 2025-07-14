@@ -1,6 +1,6 @@
 [project]
 name = "bm.recursive-functions"
-version = "0.6.0"
+version = "0.6.1"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }
@@ -19,8 +19,8 @@ dependencies = []
 dynamic = ["description"]
 
 [project.urls]
-Changelog = "https://grscheller.github.io/bm-recursive-functions/html/changelog.html"
-Documentation = "https://grscheller.github.io/bm-recursive-functions/html/"
+Changelog = "https://github.com/grscheller/bm-recursive-functions/blob/main/CHANGELOG.md"
+Documentation = "https://grscheller.github.io/bm-docs/recursive-functions/"
 Homepage = "https://github.com/grscheller/bm-docs/blob/main/README.md"
 Source = "https://github.com/grscheller/bm-recursive-functions"
 
