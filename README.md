@@ -7,7 +7,7 @@ implement recursive functions in Python.
 
 ### Repositories
 
-- [bm.recursive-functions][1] project on *PyPI*
+- [boring-math.recursive-functions][1] project on *PyPI*
 - [Source code][2] on *GitHub*
 
 ### Detailed documentation
@@ -22,7 +22,7 @@ implement recursive functions in Python.
 - CLI applications
   - [Ackermann CGI programs](#ackermann-cli-programs)
 
-This project is part of the [Boring Math][4] **bm.** namespace project.
+This project is part of the [Boring Math][4] **boring-math** namespace project.
 
 ### Recursive functions
 
@@ -88,8 +88,8 @@ recursively defined for `m,n >= 0` by
 
 ______________________________________________________________________
 
-[1]: https://pypi.org/project/bm.recursive-functions/
+[1]: https://pypi.org/project/boring-math.recursive-functions/
 [2]: https://github.com/grscheller/bm-recursive-functions/
-[3]: https://grscheller.github.io/boring-math-docs/recursive-functions/
-[4]: https://github.com/grscheller/boring-math-docs
+[3]: https://grscheller.github.io/boring-math/recursive-functions/development/build/html/
+[4]: https://grscheller.github.io/boring-math/
 [5]: https://mathworld.wolfram.com/AckermannFunction.html

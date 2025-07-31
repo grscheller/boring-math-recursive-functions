@@ -1,6 +1,6 @@
 # CHANGELOG
 
-PyPI grscheller.boring-math project.
+PyPI `boring-math.recursive-functions` project.
 
 ## Semantic Versioning
 
@@ -14,9 +14,15 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
+### Version 0.7.0 - PyPI release date 2025-07-31
+
+First version released under boring-math namespace.
+
+New PyPI name is `boring-math.recursive-functions
+
 ### Version 0.6.1 - PyPI release date 2025-07-14
 
-- Fixed munged CHANGELOG and Documentation links for PyPI
+Fixed munged CHANGELOG and Documentation links for PyPI.
 
 ### Version 0.6.0 - PyPI release date 2025-07-14
 
