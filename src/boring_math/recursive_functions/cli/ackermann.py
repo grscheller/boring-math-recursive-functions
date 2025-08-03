@@ -32,7 +32,7 @@
 from __future__ import annotations
 
 import sys
-from bm.recursive_functions.examples import ackermann_list
+from boring_math.recursive_functions.examples import ackermann_list
 
 
 def ackermann_cli() -> None:

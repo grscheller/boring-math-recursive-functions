@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from bm.recursive_functions.examples import fibonacci_generator, rev_fibonacci_generator
+from boring_math.recursive_functions.examples import fibonacci_generator, rev_fibonacci_generator
 
 class Test_fibonacci:
     def test_fib(self) -> None:

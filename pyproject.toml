@@ -1,6 +1,6 @@
 [project]
 name = "boring-math.recursive-functions"
-version = "0.7.0"
+version = "0.7.1"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }
@@ -20,12 +20,12 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/bm-recursive-functions/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/bm-docs/recursive-functions/"
-Homepage = "https://github.com/grscheller/bm-docs/blob/main/README.md"
+Documentation = "https://grscheller.github.io/boring-math/recursive-functions/"
+Homepage = "https://grscheller.github.io/boring-math/"
 Source = "https://github.com/grscheller/bm-recursive-functions"
 
 [project.scripts]
-ackermann = "bm.recursive_functions.cli.ackermann:ackermann_cli"
+ackermann = "boring_math.recursive_functions.cli.ackermann:ackermann_cli"
 
 [build-system]
 requires = ["flit_core>=3.4,<4"]

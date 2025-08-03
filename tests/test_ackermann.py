@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from bm.recursive_functions.examples import ackermann_list
+from boring_math.recursive_functions.examples import ackermann_list
 
 class Test_ackerman:
     def test_ack_list(self) -> None:
