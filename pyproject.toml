@@ -1,11 +1,20 @@
+[build-system]
+requires = ["flit_core>=3.12,<4"]
+build-backend = "flit_core.buildapi"
+
 [project]
-name = "boring-math.recursive-functions"
+name = "boring-math-recursive-functions"
 version = "0.7.1"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
-keywords = ["ackermann", "fibonacci", "recursive", "recursive functions"]
+keywords = [
+  "ackermann",
+  "fibonacci",
+  "recursive",
+  "recursive functions",
+]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Framework :: Pytest",
@@ -18,21 +27,22 @@ classifiers = [
 dependencies = []
 dynamic = ["description"]
 
+[project.optional-dependencies]
+test = [
+  "pytest>=8.4.1",
+]
+
 [project.urls]
-Changelog = "https://github.com/grscheller/bm-recursive-functions/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/recursive-functions/"
-Homepage = "https://grscheller.github.io/boring-math/"
-Source = "https://github.com/grscheller/bm-recursive-functions"
+Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
+Documentation = "https://grscheller.github.io/boring-math/recursive-functions/build/html/releases.html"
+Homepage = "https://grscheller.github.io/boring-math/blob/main/README.md"
+Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
 [project.scripts]
 ackermann = "boring_math.recursive_functions.cli.ackermann:ackermann_cli"
 
-[build-system]
-requires = ["flit_core>=3.4,<4"]
-build-backend = "flit_core.buildapi"
-
-[tool.flit.sdist]
-exclude = ["dist", "tests", ".gitignore", ".mypy_cache", ".pytest_cache"]
+[tool.flit.module]
+name = "boring_math.integer_math"
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
@@ -47,16 +57,15 @@ enabled = true
 live-mode = true
 strict = true
 report_progress = true
-exclude = ["tests/.*"]
 
 [tool.pytest.ini_options]
 consider_namespace_packages = true
+testpaths = ["tests/"]
+addopts = "-ra"
 
 [tool.ruff]
 target-version = "py313"
-
-[tool.ruff.lint.per-file-ignores]
-"__init__.py" = ["F401"]
+ignore = ["E741"]
 
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
