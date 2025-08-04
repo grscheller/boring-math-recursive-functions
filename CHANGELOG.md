@@ -14,6 +14,12 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
+### Version 0.8.0 - PyPI release date 2025-08-04
+
+Infrastructure updated, now similar to pythonic-fp projects.
+
+First version released under boring-math namespace.
+
 ### Version 0.7.0 - PyPI release date 2025-07-31
 
 First version released under boring-math namespace.
