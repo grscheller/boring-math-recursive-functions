@@ -34,7 +34,7 @@ test = [
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/recursive-functions/build/html/releases.html"
+Documentation = "https://grscheller.github.io/boring-math/recursive-functions/development/build/html/releases.html"
 Homepage = "https://grscheller.github.io/boring-math/blob/main/README.md"
 Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
