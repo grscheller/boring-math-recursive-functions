@@ -21,27 +21,27 @@ Package to explore efficient ways to implement recursive functions.
 Example recursive functions
 ---------------------------
 
-- module: bm.recursive_functions.examples
+- module: boring_math.recursive_functions.examples
 
   - Ackermann's function
 
     - with list
     
-      - function: bm.recursive_functions.examples.ackermann_list
+      - function: boring_math.recursive_functions.examples.ackermann_list
 
   - Fibonacci sequences
 
     - with generators
 
-      - function: bm.recursive_functions.examples.fibonacci_generator
-      - function: bm.recursive_functions.examples.rev_fibonacci_generator
+      - function: boring_math.recursive_functions.examples.fibonacci_generator
+      - function: boring_math.recursive_functions.examples.rev_fibonacci_generator
 
 CLI program entry points
 ------------------------
 
-- package: bm.recursive_functions.cli
+- package: boring_math.recursive_functions.cli
 
-  - module: bm.recursive_functions.cli.ackermann
+  - module: boring_math.recursive_functions.cli.ackermann
 
 """
 

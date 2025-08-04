@@ -25,7 +25,7 @@ Example applications
 
 - Ackermann program: ackermann
 
-  - bm.recursive_functions.cli.ackermann
+  - boring_math.recursive_functions.cli.ackermann
 
     - uses a Python list to implement recursion
 
