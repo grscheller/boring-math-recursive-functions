@@ -29,8 +29,6 @@
 
 """
 
-from __future__ import annotations
-
 import sys
 from boring_math.recursive_functions.examples import ackermann_list
 

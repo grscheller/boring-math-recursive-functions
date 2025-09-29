@@ -26,7 +26,7 @@ Example recursive functions
   - Ackermann's function
 
     - with list
-    
+
       - function: boring_math.recursive_functions.examples.ackermann_list
 
   - Fibonacci sequences

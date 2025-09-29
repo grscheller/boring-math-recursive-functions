@@ -50,8 +50,6 @@ sequence.
 
 """
 
-from __future__ import annotations
-
 from collections.abc import Iterator
 
 __all__ = ['ackermann_list', 'fibonacci_generator', 'rev_fibonacci_generator']
