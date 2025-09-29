@@ -1,8 +1,8 @@
 [project]
 name = "boring-math-recursive-functions"
-version = "0.8.1"
+version = "0.9.0"
 readme = "README.rst"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
@@ -24,9 +24,9 @@ dependencies = []
 dynamic = ["description"]
 
 [project.urls]
-Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/recursive-functions/development/build/html/releases.html"
-Homepage = "https://grscheller.github.io/boring-math/blob/main/README.md"
+Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.rst"
+Documentation = "https://grscheller.github.io/boring-math/recursive-functions/development/build/html/"
+Homepage = "https://grscheller.github.io/boring-math/homepage/build/html/"
 Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
 [project.scripts]
@@ -45,9 +45,11 @@ build-backend = "flit_core.buildapi"
 name = "boring_math.recursive_functions"
 
 [tool.mypy]
-enable_incomplete_feature = ["NewGenericSyntax"]
+enable_incomplete_feature = "NewGenericSyntax"
+explicit_package_bases = true
 implicit_reexport = false
 local_partial_types = true
+namespace_packages = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
@@ -55,6 +57,7 @@ warn_unused_configs = true
 [tool.pylsp-mypy]
 enabled = true
 live-mode = true
+dmypy = false
 strict = true
 report_progress = true
 
@@ -68,6 +71,10 @@ target-version = "py313"
 
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["C901"]
+"**/*.py" = ["E741"]
 
 [tool.ruff.format]
 quote-style = "single"
