@@ -46,7 +46,7 @@ sequence.
 
     Actually, a Fibonacci extends can extend in both directions.
 
-    - ..., 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 6, 13, ...
+    - ``..., 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 6, 13, ...``
 
 """
 
@@ -88,8 +88,8 @@ def fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
     Generate a Fibonacci sequence instead of recursively evaluating it.
 
     - returns an iterator to a Fibonacci sequence
-      - beginning fib0, fib1, fib0+fib1, ...
-      - default yields 0, 1, 1. 2, 3, 5, 8, 13, ...
+      - beginning ``fib0, fib1, fib0+fib1, ...``
+      - default yields ``0, 1, 1. 2, 3, 5, 8, 13, ...``
 
     """
     while True:
@@ -103,8 +103,8 @@ def rev_fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
     Generate a reverse Fibonacci sequence instead of recursively evaluating it.
 
     - Returns iterator iterating over the Fibonacci sequence in reverse order
-      - beginning fib1, fib0, fib1-fib0, ...
-      - default yields 1, -1, 2, -3, 5, -8, 13, ...
+      - beginning ``fib1, fib0, fib1-fib0, ...``
+      - default yields ``1, -1, 2, -3, 5, -8, 13, ...``
 
     """
     while True:

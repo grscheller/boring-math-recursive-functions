@@ -30,7 +30,7 @@ Homepage = "https://grscheller.github.io/boring-math/homepage/build/html/"
 Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
 [project.scripts]
-ackermann = "boring_math.recursive_functions.cli.ackermann:ackermann_cli"
+ackermann = "boring_math.recursive_functions.cli.ackermann_cli:ackermann"
 
 [project.optional-dependencies]
 test = [
