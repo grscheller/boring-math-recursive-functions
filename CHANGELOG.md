@@ -14,29 +14,22 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
-### Version 0.8.0 - PyPI release date 2025-08-04
+### Version 0.8.1 - PyPI release date 2025-08-04
 
-Infrastructure updated, now similar to pythonic-fp projects.
+Infrastructure updated, now similar to Pythonic FP projects.
 
-First version released under boring-math namespace.
+### Version 0.7.1 - PyPI release date 2025-07-31
 
-### Version 0.7.0 - PyPI release date 2025-07-31
-
-First version released under boring-math namespace.
-
-New PyPI name is `boring-math.recursive-functions
+New PyPI name is `boring-math-recursive-functions
 
 ### Version 0.6.1 - PyPI release date 2025-07-14
 
-Fixed munged CHANGELOG and Documentation links for PyPI.
+First (correct) version to use boring-math.recursive-functions
 
-### Version 0.6.0 - PyPI release date 2025-07-14
-
-- First version to use pythonic_fp namespace
-- no longer using dtools namespace packages
+- fixed munged CHANGELOG and Documentation links.
 
 ### Version 0.5.0 - PyPI release date 2025-01-??
 
 - Part of the Boring Math projects
-  - PyPI **bm.** namespace
+  - PyPI bm.recursive-functions
 - Migrated code from grscheller/boring-math repo

@@ -18,30 +18,39 @@ Recursive Functions Package
 
 Package to explore efficient ways to implement recursive functions.
 
-Example recursive functions
----------------------------
+Ackermann function
+------------------
 
-- module: boring_math.recursive_functions.examples
+Ackermann's function is an example of a function that is computable
+but not primitively recursive. It quickly becomes computationally
+intractable for relatively small values of m.
 
-  - Ackermann's function
+Ackermann function is defined recursively by
 
-    - with list
+    ``ackermann(0,n) = n+1`` for ``n >= 0``
 
-      - function: boring_math.recursive_functions.examples.ackermann_list
+    ``ackermann(m,0) = ackermann(m-1,1)`` for ``m >= 0``
 
-  - Fibonacci sequences
+    ``ackermann(m,n) = ackermann(m-1, ackermann(m,n-1))`` for ``m, n > 0``
 
-    - with generators
+Fibonacci sequences
+-------------------
 
-      - function: boring_math.recursive_functions.examples.fibonacci_generator
-      - function: boring_math.recursive_functions.examples.rev_fibonacci_generator
+The Fibonacci sequence is usually taught in grade school as the
+first recursive function that is not either an arithmetic or geometric
+progression.
 
-CLI program entry points
-------------------------
+The Fibonacci sequence is traditionally defined as
 
-- package: boring_math.recursive_functions.cli
+    ``f₁ = 1``
 
-  - module: boring_math.recursive_functions.cli.ackermann
+    ``f₂ = 1``
+
+    ``fₙ₊₂ = fₙ₊₁ + fₙ``
+
+Actually, the Fibonacci sequence can be extended in both directions.
+
+    ``..., 13, -8, 5, -3, 2, -1, 1, 0, 1, 1, 2, 3, 5, 6, 13, ...``
 
 """
 
