@@ -13,9 +13,9 @@ not yet defined values. Functions defined using previously well defined values
 having "base cases" are called "primitively recursive functions." Not all
 computable functions are primitively recursive.
 
-This PyPI project is part of of the grscheller
-`boring-math namespace projects
-<https://github.com/grscheller/boring-math/blob/main/README.md>`_
+This pypi project is part of the
+`boring math
+<https://grscheller.github.io/boring-math>`_ projects.
 
 Documentation
 -------------
