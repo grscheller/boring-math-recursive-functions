@@ -1,6 +1,6 @@
 [project]
 name = "boring-math-recursive-functions"
-version = "0.9.0"
+version = "1.0.0"
 readme = "README.rst"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
@@ -20,17 +20,20 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+  "pythonic-fp-iterables>=5.1.2",
+]
 dynamic = ["description"]
 
 [project.urls]
-Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.rst"
-Documentation = "https://grscheller.github.io/boring-math/recursive-functions/development/build/html/"
-Homepage = "https://grscheller.github.io/boring-math/homepage/build/html/"
+Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
+Documentation = "https://grscheller.github.io/boring-math/recursive-functions/development/build/html"
+Homepage = "https://grscheller.github.io/boring-math/homepage/build/html"
 Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
 [project.scripts]
-ackermann = "boring_math.recursive_functions.cli.ackermann_cli:ackermann"
+ackermann_list = "boring_math.recursive_functions.cli.ackermann_cli:ackermann_list_cli"
+fibonacci = "boring_math.recursive_functions.cli.fibonacci_cli:fibonacci"
 
 [project.optional-dependencies]
 test = [

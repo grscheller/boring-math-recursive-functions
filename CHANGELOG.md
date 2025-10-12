@@ -14,6 +14,12 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
+### Version 1.0.0 - PyPI release date 2025-10-11
+
+Completely rewrote Fibonacci library and created cli implementation.
+
+Docs now use Sphinx.
+
 ### Version 0.8.1 - PyPI release date 2025-08-04
 
 Infrastructure updated, now similar to Pythonic FP projects.

@@ -13,16 +13,13 @@
 # limitations under the License.
 
 """
-Recursive functions examples
-============================
+Ackermann examples
+==================
 
-Example implementations for various recursive functions.
+Example implementations for Ackermann's function.
 
 """
-
-from collections.abc import Iterator
-
-__all__ = ['ackermann_list', 'fibonacci_generator', 'rev_fibonacci_generator']
+__all__ = ['ackermann_list']
 
 
 def ackermann_list(m: int, n: int) -> int:
@@ -54,39 +51,3 @@ def ackermann_list(m: int, n: int) -> int:
             acker[-1] = mm
             acker.append(nn - 1)
     return acker[0]
-
-
-def fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
-    """
-    Generate a Fibonacci sequence instead of recursively evaluating it.
-
-        Beginning: ``fib0, fib1, fib0+fib1, ...``
-
-        Defaults yield: ``0, 1, 1. 2, 3, 5, 8, 13, ...``
-
-    :param fib0: Zeroth element of sequence.
-    :param fib1: Next element of sequence.
-    :returns: Iterator iterating over a Fibonacci sequence.
-
-    """
-    while True:
-        yield fib0
-        fib0, fib1 = fib1, fib0 + fib1
-
-
-def rev_fibonacci_generator(fib0: int = 0, fib1: int = 1) -> Iterator[int]:
-    """
-    Generate a reverse Fibonacci sequence instead of recursively evaluating it.
-
-        Beginning ``fib1, fib0, fib1-fib0, ...``
-
-        Defaults yield: ``0, 1, -1, 2, -3, 5, -8, 13, ...``
-
-    :param fib0: Zeroth element of sequence.
-    :param fib1: Next element of sequence.
-    :returns: Iterator iterating over a Fibonacci sequence in reverse order.
-
-    """
-    while True:
-        fib0, fib1 = fib1, fib0 - fib1
-        yield fib0

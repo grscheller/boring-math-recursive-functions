@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Program to evaluate Ackermann's function.
+"""
+Programs to evaluate Ackermann's function.
 
 .. note::
 
@@ -25,21 +26,20 @@
     Ackermann's function is an example of a computable but not primitively
     recursive function.
 
-    Program **ackermann** uses a Python List to implement recursion.
+- **ackermann_list:** Computes Ackermann's function by simulating recursion with a list.
 
 """
 
 import sys
-from boring_math.recursive_functions.examples import ackermann_list
+from boring_math.recursive_functions.ackermann import ackermann_list
 
 
-def ackermann() -> None:
+def ackermann_list_cli() -> None:
     """Evaluate Ackermann's function simulating recursion with a Python list.
 
-    Usage: ``ackermann m n``
+    Usage: ``ackermann_list m n``
 
-    - gets installed into the virtual environment
-    - becomes numerically intractable after m=4 n=1
+    Becomes numerically intractable after m=4 n=1.
 
     """
     args = sys.argv[1:]

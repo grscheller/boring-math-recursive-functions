@@ -23,10 +23,13 @@ section in the project's pyproject.toml file.
 Example applications
 --------------------
 
-- Ackermann program: ackermann
+- Ackermann's function
 
-  - boring_math.recursive_functions.cli.ackermann
+  - **ackermann_list:** Calculate values for a computable but not simple
+    recursive function.
 
-    - uses a Python list to implement recursion
+- Fibonacci sequences
+
+  - **fibonacci:** Generate Fibonacci sequences both forward and backward.
 
 """
