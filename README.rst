@@ -22,7 +22,7 @@ Documentation
 
 Documentation for this project is hosted on
 `GitHub Pages
-<https://grscheller.github.io/boring-math/recursive-functions/development/build/html>`_.
+<https://grscheller.github.io/boring-math/recursive-functions>`_.
 
 Copyright and License
 ---------------------
