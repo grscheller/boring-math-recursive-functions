@@ -16,9 +16,9 @@
 Recursive Functions
 -------------------
 
-.. admonition:: Recursive function theory package
-
-    Package to explore efficient ways to implement recursive functions.
+Package to explore efficient ways to implement recursive functions. This
+project is more about exploring how to implement recursive functions
+efficiently than exposing tools to do such.
 
 .. admonition:: Ackermann's Function
 
