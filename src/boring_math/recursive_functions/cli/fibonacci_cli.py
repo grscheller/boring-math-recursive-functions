@@ -13,10 +13,9 @@
 # limitations under the License.
 
 """
-Programs involving Fibonacci sequences. These are installed into the
-Python virtual environment.
+.. admonition:: Programs involving Fibonacci sequences.
 
-- **fibonacci:** Prints generated Fibonacci sequences to stdout.
+    - **fibonacci:** Prints generated Fibonacci sequences to stdout.
 
 """
 
@@ -29,12 +28,23 @@ from pythonic_fp.iterables.drop_take import take
 
 def fibonacci() -> None:
     """
-    Calculate Fibonacci sequences both forward ans backwards.
+    .. admonition:: Fibonacci
 
-    Usage: ``fibonacci [-r] f1 f2 n``
+        Calculate Fibonacci sequences both forward ans backwards.
 
-    - gets installed into the virtual environment
+        .. admonition:: Usage
 
+            ```console
+                $ fibonacci [-r] f1 f2 n``
+
+            ```
+
+            where
+
+            - **f1**: first number in sequence
+            - **f2**: second number in sequence
+            - **n**: number of terms to output
+            - **-r** reverse direction of sequence
 
     """
     nargs = len(args := sys.argv[1:])

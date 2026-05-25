@@ -1,4 +1,4 @@
-# Copyright 2016-2025 Geoffrey R. Scheller
+# Copyright 2016-2026 Geoffrey R. Scheller
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +13,9 @@
 # limitations under the License.
 
 """
-Fibonacci examples
-==================
+.. admonition:: Fibonacci sequence
 
-Example implementations for Fibonacci functions.
+Example implementation for Fibonacci sequences.
 
 """
 
@@ -45,20 +44,22 @@ def orderable_generator[T: OrderedRing](
     fib0: T, fib1: T, forward: bool = True
 ) -> Iterator[T]:
     """
-    Generate a Fibonacci or reverse Fibonacci sequence.
+    .. admonition:: Generate a Fibonacci sequence
 
-    - ``fib0=0, fib1=1`` generates
+        :param fib0: Zeroth numeric element of the sequence.
+        :param fib1: Next numeric element of the sequence.
+        :param forward: Generate sequence in forward or reverse order.
+        :yields: An iterator iterating over a Fibonacci sequence.
 
-      - the sequence ``0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 ...``
+        .. note::
 
-    - ``fib0=5, fib1=3, forward = False`` generates
+            - ``fibonacci.orderable_generator(fib0=0, fib1=1)`` generates
 
-      - the sequence ``5, 3, 2, 1, 1, 0, 1, -1, 2, -3, 5, -8, ...``
+            - the sequence ``0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 ...``
 
-    :param fib0: Zeroth numeric element of the sequence.
-    :param fib1: Next numeric element of the sequence.
-    :param reverse: Generate sequence in reverse order.
-    :returns: An iterator iterating over a Fibonacci sequence.
+            - ``fibonacci.orderable_generator(fib0=5, fib1=3, forward = False)`` generates
+
+            - the sequence ``5, 3, 2, 1, 1, 0, 1, -1, 2, -3, 5, -8, ...``
 
     """
     if forward:

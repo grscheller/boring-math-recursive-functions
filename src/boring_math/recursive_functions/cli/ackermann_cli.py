@@ -13,20 +13,21 @@
 # limitations under the License.
 
 """
-Programs to evaluate Ackermann's function.
+.. admonition:: Programs to evaluate Ackermann's function.
 
-.. note::
+    .. note::
 
-    The version of the Ackermann's function being used is defined recursively by
+        The version of the Ackermann's function being used is defined
+        recursively by
 
-    - ``ackermann(0,n) = n+1                                 for n >= 0``
-    - ``ackermann(m,0) = ackermann(m-1,1)                    for m >= 0``
-    - ``ackermann(m,n) = ackermann(m-1, ackermann(m, n-1))   for m,n > 0``
+        - ``ackermann(0,n) = n+1                                 for n >= 0``
+        - ``ackermann(m,0) = ackermann(m-1,1)                    for m >= 0``
+        - ``ackermann(m,n) = ackermann(m-1, ackermann(m, n-1))   for m,n > 0``
 
-    Ackermann's function is an example of a computable but not primitively
-    recursive function.
+        Ackermann's function is an example of a computable but not primitively
+        recursive function.
 
-- **ackermann_list:** Computes Ackermann's function by simulating recursion with a list.
+    - **ackermann_list:** Computes Ackermann's function by simulating recursion with a list.
 
 """
 
@@ -37,9 +38,17 @@ from boring_math.recursive_functions.ackermann import ackermann_list
 def ackermann_list_cli() -> None:
     """Evaluate Ackermann's function simulating recursion with a Python list.
 
-    Usage: ``ackermann_list m n``
+    .. admonition:: Usage
 
-    Becomes numerically intractable after m=4 n=1.
+        ```console
+            $ ackermann_list m n``
+
+        ```
+
+    .. note:
+
+        Ackermann's function becomes numerically intractable
+        after m=4 n=1.
 
     """
     args = sys.argv[1:]

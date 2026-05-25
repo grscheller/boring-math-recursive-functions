@@ -13,23 +13,23 @@
 # limitations under the License.
 
 """
-Entry points for automatically generated CLI scripts
-----------------------------------------------------
+.. admonition:: CGI script entry points
 
-The CGI package automatically generates Python scripts in an OS independent way
-using the packaging build backend. This is configured by the `[project.scripts]`
-section in the project's pyproject.toml file.
+    Automatically generate Python scripts in an OS independent way
+    using the packaging build's backend, *flit* in this case. This
+    is configured by the [project.scripts] section in the project's
+    pyproject.toml file.
 
-Example applications
---------------------
+    **Example applications:**
 
-- Ackermann's function
+    .. admonition:: Ackermann's function
 
-  - **ackermann_list:** Calculate values for a computable but not simple
-    recursive function.
+        - **ackermann_list:** Calculate values for a computable
+          but not simple recursive function.
 
-- Fibonacci sequences
+    .. admonition:: Fibonacci sequences
 
-  - **fibonacci:** Generate Fibonacci sequences both forward and backward.
+        - **fibonacci:** Generate Fibonacci sequences both forwards
+          and backwards.
 
 """

@@ -13,8 +13,7 @@
 # limitations under the License.
 
 """
-Ackermann examples
-==================
+.. admonition:: Ackermann examples
 
 Example implementations for Ackermann's function.
 
@@ -23,18 +22,19 @@ __all__ = ['ackermann_list']
 
 
 def ackermann_list(m: int, n: int) -> int:
-    """Ackermann's Function.
+    """
+    .. admonition:: Ackermann's Function
 
-    .. note::
+        :param m: First argument to Ackermann's function.
+        :param n: Second argument to Ackermann's function.
+        :returns: A very hard to calculate useless value.
 
-        This implementation models the recursion with a Python list
-        instead of Python's "call stack". It then evaluates the
-        innermost ackermann function first. To naively use call stack
-        recursion would result in the loss of stack safety.
+        .. note::
 
-    :param m: First argument to Ackermann's function.
-    :param n: Second argument to Ackermann's function.
-    :returns: A very hard to calculate useless value.
+            This implementation models the recursion with a Python list
+            instead of Python's call stack. It then evaluates the
+            innermost ackermann function first. To naively use call
+            stack recursion would quickly result in a stack overflow.
 
     """
     acker = [m, n]
