@@ -24,7 +24,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pythonic-fp-iterables>=5.1.2",
+  "pythonic-fp-iterables>=5.1.4",
 ]
 dynamic = ["description"]
 
