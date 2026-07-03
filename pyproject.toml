@@ -7,7 +7,9 @@ name = "boring-math-recursive-functions"
 version = "1.0.1"
 readme = "README.rst"
 requires-python = ">=3.13"
-authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
+authors = [
+  { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
+]
 keywords = [
   "ackermann",
   "fibonacci",
@@ -26,7 +28,7 @@ classifiers = [
 dependencies = [
   "pythonic-fp-iterables>=5.1.4",
 ]
-dynamic = ["description"]
+description = "Recursive functions package."
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
@@ -54,20 +56,13 @@ warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
 
-[tool.pylsp-mypy]
-enabled = true
-live-mode = true
-dmypy = false
-strict = true
-report_progress = true
-
-[tool.pytest.ini_options]
-addopts = "-ra"
+[tool.pytest]
+addopts = ["-ra"]
 consider_namespace_packages = true
 testpaths = ["tests/"]
 
 [tool.ruff]
-target-version = "py313"
+target-version = "py314"
 
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
