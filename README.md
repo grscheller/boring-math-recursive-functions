@@ -5,7 +5,6 @@ in Python.
 
 PyPI project
 [boring-math-recursive-functions](https://pypi.org/project/boring-math-recursive-functions).
-
 This pypi project is part of the
 [boring math](https://grscheller.github.io/boring-math) projects.
 
