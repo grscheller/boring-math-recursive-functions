@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "boring-math-recursive-functions"
-version = "1.0.1"
+version = "1.1.0"
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
@@ -32,7 +32,6 @@ description = "Recursive functions package."
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-recursive-functions/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/homepage/build/html/projects/recursive_functions.html"
 Homepage = "https://grscheller.github.io/boring-math/"
 Source = "https://github.com/grscheller/boring-math-recursive-functions"
 
